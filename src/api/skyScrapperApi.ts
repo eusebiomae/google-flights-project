@@ -27,7 +27,6 @@ export const searchFlights = async (params: FlightSearchParams): Promise<Flight[
       destinationSkyId: params.destination,
       fromDate: params.departureDate,
       toDate: params.returnDate || '',
-      currency: 'USD',
     },
     headers: {
       'X-RapidAPI-Host': 'sky-scrapper.p.rapidapi.com',

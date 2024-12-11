@@ -27,7 +27,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold text-center mb-6">Google Flights Project</h1>
+      <h1 className="text-3xl text-center mb-6 text-white">Google Flights Project</h1>
       <SearchForm onSearch={handleSearch} />
       {loading && <Loader />}
       <div className="grid gap-4 mt-6">
@@ -36,7 +36,7 @@ const Home: React.FC = () => {
             <FlightCard key={index} flight={flight} />
           ))
         ) : (
-          !loading && <p className="text-center">Nenhum voo encontrado.</p>
+          !loading && <p className="text-center text-white mt-12">No flight found in this search.</p>
         )}
       </div>
     </div>
