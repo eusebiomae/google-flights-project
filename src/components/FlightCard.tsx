@@ -12,8 +12,8 @@ const FlightCard: React.FC<FlightCardProps> = ({ flight }) => {
         <h3 className="text-lg font-bold">
           {flight.origin} → {flight.destination}
         </h3>
-        <p>Preço: <span className="font-semibold">${flight.price.toFixed(2)}</span></p>
-        <p>Data de partida: {new Date(flight.date).toLocaleDateString()}</p>
+        <p>Price: <span className="font-semibold">${flight.price.toFixed(2)}</span></p>
+        <p>Departure Date: {new Date(flight.date).toLocaleDateString()}</p>
       </div>
       <a
         href={flight.link}
@@ -21,7 +21,7 @@ const FlightCard: React.FC<FlightCardProps> = ({ flight }) => {
         rel="noopener noreferrer"
         className="text-blue-500 hover:underline"
       >
-        Reservar agora
+        Book now
       </a>
     </div>
   );
